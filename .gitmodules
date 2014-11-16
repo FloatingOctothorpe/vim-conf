@@ -1,3 +1,6 @@
 [submodule "ctrlp"]
 	path = vimfiles/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "markdown"]
+	path = vimfiles/bundle/markdown
+	url = https://github.com/tpope/vim-markdown.git
