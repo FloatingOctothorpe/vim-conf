@@ -19,6 +19,9 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+" Allow filetype specific settings from ftplugin or indent dirs
+filetype plugin indent on
+
 " General settings (see :help <setting> for details)
 set autoread
 set fileencoding=utf8
