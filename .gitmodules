@@ -7,3 +7,6 @@
 [submodule "twiki"]
 	path = vimfiles/bundle/twiki
 	url = https://github.com/vim-scripts/TWiki-Syntax.git
+[submodule "puppet"]
+	path = vimfiles/bundle/puppet
+	url = https://github.com/puppetlabs/puppet-syntax-vim.git
