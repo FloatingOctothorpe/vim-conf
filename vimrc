@@ -43,6 +43,7 @@ nnoremap <F2> :set number! <CR>
 nnoremap <F3> :set relativenumber! <CR>
 nnoremap <F7> :set spell! <CR>
 inoremap jk <esc>
+nnoremap <leader>t :tabnew<cr>
 nnoremap <leader>ev :tabnew $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
