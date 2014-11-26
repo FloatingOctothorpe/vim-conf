@@ -23,14 +23,14 @@ Installation
  4. Optionally clone vim plugins using git submodules:
 
         cd vim-conf
-        git submodules init
-        git submodules update
+        git submodule init
+        git submodule update
 
     Alternatively only clone individual modules, e.g.:
 
         cd vim-conf
-        git submodules init vimfiles/bundle/ctrlp
-        git submodules update vimfiles/bundle/ctrlp
+        git submodule init vimfiles/bundle/ctrlp
+        git submodule update vimfiles/bundle/ctrlp
 
 ### Windows notes
 Steps 2 and 3 need to be adjusted slightly for windows. Step 2 should read as
