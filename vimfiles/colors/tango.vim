@@ -86,35 +86,35 @@ if has('gui_running')
 else
   "color terminal
   hi Normal       ctermfg=15 ctermbg=0 cterm=none
-  hi SpecialKey   ctermfg=1 ctermbg=0 cterm=none
-  hi NonText      ctermfg=9 ctermbg=0 cterm=bold
-  hi Directory    ctermfg=1 ctermbg=0 cterm=none
-  hi ErrorMsg     ctermfg=15 ctermbg=4 cterm=bold
+  hi SpecialKey   ctermfg=4 ctermbg=0 cterm=none
+  hi NonText      ctermfg=4 ctermbg=0 cterm=bold
+  hi Directory    ctermfg=4 ctermbg=0 cterm=none
+  hi ErrorMsg     ctermfg=7 ctermbg=1 cterm=bold
   hi IncSearch    ctermfg=15 ctermbg=0 cterm=reverse
-  hi Search       ctermfg=0 ctermbg=6 cterm=none
+  hi Search       ctermfg=0 ctermbg=3 cterm=none
   hi MoreMsg      ctermfg=2 ctermbg=0 cterm=none
   hi ModeMsg      ctermfg=15 ctermbg=0 cterm=bold
-  hi LineNr       ctermfg=6 ctermbg=0 cterm=none
+  hi LineNr       ctermfg=3 ctermbg=0 cterm=none
   hi Question     ctermfg=2 ctermbg=0 cterm=none
   hi StatusLine   ctermfg=15 ctermbg=0 cterm=bold,reverse
   hi StatusLineNC ctermfg=15 ctermbg=0 cterm=reverse
   hi VertSplit    ctermfg=15 ctermbg=0 cterm=reverse
-  hi Title        ctermfg=5 ctermbg=0 cterm=bold
+  hi Title        ctermfg=5 ctermbg=0 cterm=none
   hi Visual       ctermfg=15 ctermbg=0 cterm=reverse
   hi clear        VisualNOS
-  hi WarningMsg   ctermfg=4 ctermbg=0 cterm=none
-  hi WildMenu     ctermfg=0 ctermbg=6 cterm=none
-  hi Folded       ctermfg=1 ctermbg=15 cterm=none
-  hi FoldColumn   ctermfg=1 ctermbg=15 cterm=none
-  hi DiffAdd      ctermfg=15 ctermbg=4 cterm=none
+  hi WarningMsg   ctermfg=1 ctermbg=0 cterm=none
+  hi WildMenu     ctermfg=0 ctermbg=3 cterm=none
+  hi Folded       ctermfg=4 ctermbg=7 cterm=none
+  hi FoldColumn   ctermfg=4 ctermbg=7 cterm=none
+  hi DiffAdd      ctermfg=15 ctermbg=1 cterm=none
   hi DiffChange   ctermfg=15 ctermbg=5 cterm=none
-  hi DiffDelete   ctermfg=1 ctermbg=3 cterm=bold
-  hi DiffText     ctermfg=15 ctermbg=4 cterm=bold
-  hi SignColumn   ctermfg=1 ctermbg=15 cterm=none
-  hi SpellBad     ctermfg=15 ctermbg=4 cterm=none
-  hi SpellCap     ctermfg=15 ctermbg=1 cterm=none
+  hi DiffDelete   ctermfg=4 ctermbg=6 cterm=bold
+  hi DiffText     ctermfg=15 ctermbg=1 cterm=bold
+  hi SignColumn   ctermfg=4 ctermbg=7 cterm=none
+  hi SpellBad     ctermfg=15 ctermbg=1 cterm=none
+  hi SpellCap     ctermfg=15 ctermbg=4 cterm=none
   hi SpellRare    ctermfg=15 ctermbg=5 cterm=none
-  hi SpellLocal   ctermfg=15 ctermbg=3 cterm=none
+  hi SpellLocal   ctermfg=15 ctermbg=6 cterm=none
   hi Pmenu        ctermfg=15 ctermbg=5 cterm=none
   hi PmenuSel     ctermfg=15 ctermbg=7 cterm=none
   hi PmenuSbar    ctermfg=15 ctermbg=7 cterm=none
@@ -124,18 +124,18 @@ else
   hi TabLineFill  ctermfg=15 ctermbg=0 cterm=reverse
   hi CursorColumn ctermfg=15 ctermbg=7 cterm=none
   hi CursorLine   ctermfg=15 ctermbg=0 cterm=underline
-  hi MatchParen   ctermfg=15 ctermbg=3 cterm=none
-  hi Comment      ctermfg=1 ctermbg=0 cterm=none
-  hi Constant     ctermfg=4 ctermbg=0 cterm=none
+  hi MatchParen   ctermfg=15 ctermbg=6 cterm=none
+  hi Comment      ctermfg=4 ctermbg=0 cterm=none
+  hi Constant     ctermfg=1 ctermbg=0 cterm=none
   hi Special      ctermfg=5 ctermbg=0 cterm=none
-  hi Identifier   ctermfg=3 ctermbg=0 cterm=none
-  hi Statement    ctermfg=6 ctermbg=0 cterm=none
+  hi Identifier   ctermfg=6 ctermbg=0 cterm=none
+  hi Statement    ctermfg=3 ctermbg=0 cterm=none
   hi PreProc      ctermfg=5 ctermbg=0 cterm=none
   hi Type         ctermfg=2 ctermbg=0 cterm=none
   hi Underlined   ctermfg=5 ctermbg=0 cterm=underline
-  hi Ignore       ctermfg=15 ctermbg=0 cterm=bold
-  hi Error        ctermfg=15 ctermbg=4 cterm=bold
-  hi Todo         ctermfg=0 ctermbg=6 cterm=none
+  hi Ignore       ctermfg=7 ctermbg=0 cterm=bold
+  hi Error        ctermfg=7 ctermbg=1 cterm=bold
+  hi Todo         ctermfg=0 ctermbg=3 cterm=none
 endif
 
 "linked above
