@@ -57,10 +57,6 @@ nnoremap <leader>W :match none<cr>
 " Abbreviations
 iabbrev teh the
 
-if has('mouse')
-  set mouse=a
-endif
-
 if has("win32") || has("win16")
 
   " Avoid http://code.google.com/p/vim/issues/detail?id=28

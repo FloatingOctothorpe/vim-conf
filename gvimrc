@@ -13,3 +13,8 @@ set columns=90
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r
+
+" Enable mouse if available
+if has('mouse')
+  set mouse=a
+endif
