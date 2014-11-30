@@ -58,10 +58,10 @@ if has('gui_running')
   hi DiffDelete   guifg=#3465a4 guibg=#06989a gui=bold
   hi DiffText     guifg=#eeeeec guibg=#cc0000 gui=bold
   hi SignColumn   guifg=#3465a4 guibg=#eeeeec gui=none
-  hi SpellBad     guifg=#eeeeec guibg=#cc0000 gui=none
-  hi SpellCap     guifg=#eeeeec guibg=#3465a4 gui=none
-  hi SpellRare    guifg=#eeeeec guibg=#75507b gui=none
-  hi SpellLocal   guifg=#eeeeec guibg=#06989a gui=none
+  hi SpellBad     guisp=#cc0000 gui=undercurl
+  hi SpellCap     guisp=#3465a4 gui=undercurl
+  hi SpellRare    guisp=#75507b gui=undercurl
+  hi SpellLocal   guisp=#06989a gui=undercurl
   hi Pmenu        guifg=#eeeeec guibg=#75507b gui=none
   hi PmenuSel     guifg=#eeeeec guibg=#d3d7cf gui=none
   hi PmenuSbar    guifg=#eeeeec guibg=#d3d7cf gui=none
