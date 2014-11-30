@@ -9,6 +9,8 @@ execute pathogen#infect()
 " Enable syntax highlighting
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
+endif
+if exists('g:syntax_on')
   colors tango
 endif
 
