@@ -45,7 +45,9 @@ set nrformats-=octal
 let mapleader=","
 let maplocalleader="\\"
 nnoremap <F2> :set number! <CR>
-nnoremap <F3> :set relativenumber! <CR>
+if exists('+relativenumber')
+  nnoremap <F3> :set relativenumber! <CR>
+endif
 nnoremap <F7> :set spell! <CR>
 inoremap jk <esc>
 nnoremap <leader>t :tabnew<cr>
