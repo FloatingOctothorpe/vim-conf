@@ -51,6 +51,7 @@ endif
 nnoremap <F7> :set spell! <CR>
 inoremap jk <esc>
 nnoremap <leader>t :tabnew<cr>
+nnoremap <leader>p :set paste!<cr>
 nnoremap <leader>ev :tabnew $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
