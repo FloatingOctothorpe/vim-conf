@@ -10,3 +10,6 @@
 [submodule "puppet"]
 	path = vimfiles/bundle/puppet
 	url = https://github.com/puppetlabs/puppet-syntax-vim.git
+[submodule "todo.txt"]
+	path = vimfiles/bundle/todo.txt
+	url = https://github.com/freitass/todo.txt-vim.git
