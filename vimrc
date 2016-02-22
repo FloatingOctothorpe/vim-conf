@@ -35,6 +35,10 @@ set ruler
 set wildmenu
 set winwidth=79
 
+"Ignore Java class files
+set wildignore+=*.class
+let g:ctrlp_custom_ignore = { 'file': '\v\.class$', }
+
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
