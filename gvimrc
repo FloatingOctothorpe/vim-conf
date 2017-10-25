@@ -3,6 +3,12 @@
 " Set windows font
 if has("win32") || has("win16")
   set guifont=Consolas:h11:cANSI:qDRAFT
+
+  " Windows mouse settings (see :help gui-mouse)
+  set selectmode=mouse,key
+  set mousemodel=popup
+  set keymodel=startsel,stopsel
+  set selection=exclusive
 endif
 
 " Set default window size
