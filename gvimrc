@@ -2,7 +2,7 @@
 
 " Set windows font
 if has("win32") || has("win16")
-  set guifont=Courier_New:h11:cANSI
+  set guifont=Consolas:h11:cANSI:qDRAFT
 endif
 
 " Set default window size
