@@ -1,15 +1,3 @@
 [submodule "ctrlp"]
-	path = vimfiles/bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule "markdown"]
-	path = vimfiles/bundle/markdown
-	url = https://github.com/tpope/vim-markdown.git
-[submodule "twiki"]
-	path = vimfiles/bundle/twiki
-	url = https://github.com/vim-scripts/TWiki-Syntax.git
-[submodule "puppet"]
-	path = vimfiles/bundle/puppet
-	url = https://github.com/puppetlabs/puppet-syntax-vim.git
-[submodule "todo.txt"]
-	path = vimfiles/bundle/todo.txt
-	url = https://github.com/freitass/todo.txt-vim.git
+	path = vimfiles/pack/plugins/start/ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim.git

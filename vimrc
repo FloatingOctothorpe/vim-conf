@@ -3,9 +3,6 @@
 " Use Vim settings, rather than Vi settings.
 set nocompatible
 
-" Load pathogen modules in vimfiles/bundle/
-execute pathogen#infect()
-
 " Enable syntax highlighting
 if has('syntax') && !exists('g:syntax_on')
   syntax enable

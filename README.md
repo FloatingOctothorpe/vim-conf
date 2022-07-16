@@ -49,8 +49,6 @@ And step 3 should read as follows:
 License
 -------
 All configuration is distributed under the [same license as Vim][vim-license]
-itself. Pathogen is written by Tim Pope for more information please see
-[vim-pathogen on GitHub][github-pathogen].
+itself.
 
-[github-pathogen]: https://github.com/tpope/vim-pathogen
 [vim-license]: http://vimdoc.sourceforge.net/htmldoc/uganda.html#license
