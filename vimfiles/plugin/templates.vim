@@ -1,15 +1,11 @@
 " Templates for new files
-
-if has("win32") || has("win16")
-    let $MYVIM=$HOME.'/vimfiles'
-else
-    let $MYVIM=$HOME.'/.vim'
-endif
+" (vimrepopath is definited in vimrc)
 
 augroup templates
   autocmd!
-  autocmd BufNewFile *.html 0r $MYVIM/templates/template.html
-  autocmd BufNewFile *.pp 0r $MYVIM/templates/template.pp
-  autocmd BufNewFile *.remedy 0r $MYVIM/templates/template.remedy
-  autocmd BufNewFile *.sh 0r $MYVIM/templates/template.sh
+  if exists('vimrepopath')
+    exec 'autocmd BufNewFile *.html r ' . vimrepopath . '/templates/template.html | 1delete_'
+    exec 'autocmd BufNewFile *.pp r ' . vimrepopath . '/templates/template.pp | 1delete_'
+    exec 'autocmd BufNewFile *.sh r ' . vimrepopath . '/templates/template.sh | 1delete_'
+  endif
 augroup END

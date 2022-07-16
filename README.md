@@ -1,54 +1,29 @@
-vim-conf
-========
+Vim config
+==========
 
 Installation
 ------------
 
- 1. Clone this git repository:
+ 1. Clone this git repository and submodules:
 
-        git clone https://github.com/FloatingOctothorpe/vim-conf.git
+        git clone --recurse-submodules https://github.com/FloatingOctothorpe/vim-conf.git ~/git/vim-conf
 
- 2. Move existing vim configuration to one side:
+ 2. Update `.vimrc` (or `_vimrc` on Windows) to load the config:
 
-        mv ~/.vimrc ~/old.vimrc
-        mv ~/.gvimrc ~/old.gvimrc
-        mv ~/.vim ~/old.vim
+        cat > ~/.vimrc <<EOF
+        " Use version controlled config
+        let vimrepopath = '~/git/vim-conf'
+        if stridx(&runtimepath, vimrepopath) < 0
+          let &runtimepath .= ',' . vimrepopath . '/vimfiles'
+          let &packpath .= ',' . vimrepopath . '/vimfiles'
+        endif
+        exec "source " . vimrepopath . '/vimrc'
+        EOF
 
- 3. Symlink to new vim configuration:
-
-        ln -s vim-conf/vimrc ~/.vimrc
-        ln -s vim-conf/gvimrc ~/.gvimrc
-        ln -s vim-conf/vimfiles ~/.vim
-
- 4. Optionally clone vim plugins using git submodules:
-
-        cd vim-conf
-        git submodule init
-        git submodule update
-
-    Alternatively only clone individual modules, e.g.:
-
-        cd vim-conf
-        git submodule init vimfiles/bundle/ctrlp
-        git submodule update vimfiles/bundle/ctrlp
-
-### Windows notes
-Steps 2 and 3 need to be adjusted slightly for windows. Step 2 should read as
-follows:
-
-    move %userprofile%\_vimrc %userprofile%\old._vimrc
-    move %userprofile%\_gvimrc %userprofile%\old._gvimrc
-    move %userprofile%\vimfiles %userprofile%\old.vimfiles
-
-And step 3 should read as follows:
-
-    mklink %userprofile%\_vimrc vim-conf\vimrc
-    mklink %userprofile%\_gvimrc vim-conf\gvimrc
-    mklink /J %userprofile%\vimfiles vim-conf\vimfiles
+   __Note__: this will overwrite any existing `.vimrc` config.
 
 License
 -------
-All configuration is distributed under the [same license as Vim][vim-license]
-itself.
+All configuration is distributed under the [same license as Vim][vim-license].
 
 [vim-license]: http://vimdoc.sourceforge.net/htmldoc/uganda.html#license
